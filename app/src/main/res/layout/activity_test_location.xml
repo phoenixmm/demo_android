@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/setlocation"
+        android:layout_width="170dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal"
+        android:text="设置经纬度" />
+    <EditText
+        android:id="@+id/x_location"
+        android:layout_width="170dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal"
+        android:text="123.38"/>
+    <EditText
+        android:id="@+id/y_location"
+        android:layout_width="170dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center_horizontal"
+        android:text="41.8"/>
+
+
+</LinearLayout>

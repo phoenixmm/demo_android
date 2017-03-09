@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cjf.testdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- glide配置 -->
+        <meta-data
+            android:name="com.cjf.testdemo.ImageBrowser.GlideImageLoaderModule"
+            android:value="GlideModule" />
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MainService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <!--begin top window test -->
+        <service android:name=".floatwind.MainService_testTopWindow" />
+        <!--end top window  test -->
+
+
+        <!--begin tool bar test -->
+        <activity
+            android:name=".toolbar.MainActivity_testToolbar"
+            android:label="toolbardemo" >
+        </activity>
+        <!--end tool bar test -->
+
+        <!--begin  test touch -->
+        <activity
+            android:name=".touch.MainActivity_testTouch"
+            android:label="testTouch" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--end test touch -->
+
+        <!--begin  test gesture viewpager -->
+        <activity
+            android:name=".viewpage.MainActivity_testGestureViewPage"
+            android:label="testGestureViewpager"
+            android:theme="@style/ViewPagerTheme">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--end test gesture viewpager  -->
+
+
+        <!--begin  test gesture viewpager -->
+        <activity
+            android:name=".viewpostion.MainActivity_testViewPostion"
+            android:label="testViewPostion">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--end test gesture viewpager  -->
+
+    </application>
+
+</manifest>

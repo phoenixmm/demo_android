@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="300dip"
+        android:layout_height="400dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:paddingRight="100dp"
+        android:text="say hi"
+        android:layout_below="@id/textView1"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:text="click here"/>
+</RelativeLayout>
