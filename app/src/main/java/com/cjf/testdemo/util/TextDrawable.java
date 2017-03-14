@@ -1,4 +1,4 @@
-package com.cjf.testdemo;
+package com.cjf.testdemo.util;
 
 import android.content.Context;
 import android.content.res.ColorStateList;

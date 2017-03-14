@@ -33,10 +33,10 @@
 
 
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <service
@@ -90,6 +90,27 @@
             <!--</intent-filter>-->
         </activity>
         <!--end test gesture viewpager  -->
+
+        <!--begin float img broswer test -->
+        <activity android:name=".ImageBrowser.MainActivity_testImageBroser">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <!--end float img broswer test -->
+
+        <!-- begin test  pick pic -->
+        <activity android:name=".PickPic.MainActivity_testPickPic">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PickPic.SecondeActivity">
+        </activity>
+        <!-- end test  pick pic -->
 
     </application>
 
