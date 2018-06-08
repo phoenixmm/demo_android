@@ -1,5 +1,6 @@
 package com.cjf.testdemo;
 
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import java.net.NetworkInterface;
+import java.util.Collections;
+import java.util.Enumeration;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "first acitity click!!!", Toast.LENGTH_LONG).show();
+
+                Context context = MainActivity.this.getApplicationContext();
+
+
+
+
+
             }
         });
 
